@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* ---------- Landing page ---------- */
+.landing-page {
+  min-height: 100vh;
+  /* Background image for the landing page */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-content {
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+
+.landing-content h1 {
+  font-size: 56px;
+  margin: 0 0 10px;
+}
+
+.tagline {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 14px 34px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background: #1b5e20;
+}
+
+.about-us {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin: 0 20px 40px;
+  text-align: center;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e7d32;
+  color: white;
+  padding: 12px 24px;
+}
+
+.navbar .brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 26px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #d32f2f;
+  color: white;
+  font-size: 13px;
+  border-radius: 50%;
+  padding: 2px 7px;
+}
+
+/* ---------- Product list ---------- */
+.page {
+  padding: 20px 30px 40px;
+}
+
+.category-title {
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 6px;
+  margin-top: 36px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-card h4 {
+  margin: 10px 0 4px;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.add-btn {
+  margin-top: 8px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* ---------- Cart ---------- */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 14px 0;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.qty-controls button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-total {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.cart-buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background: #2e7d32;
+}
+
+.cart-buttons .checkout-btn {
+  background: #1565c0;
+}
